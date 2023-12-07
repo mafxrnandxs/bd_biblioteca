@@ -25,3 +25,7 @@ where livros.codigo =1;
 select titulo, data_aquisicao from livros 
 join exemplares on livros.codigo = exemplares.codigo
 where livros.codigo =1;
+
+SELECT *
+FROM cliente
+WHERE codigo_endereco NOT IN (SELECT idendereco FROM endereco);
